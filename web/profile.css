@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13 Jul, 2021, 6:45:51 PM
+    Author     : karthik
+*/
+
+.karthik{
+  color: #323232;
+  float: right;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  width:10%;
+  font-size: 18px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  color: #323232;
+  border-radius: 8px;
+  transition: all 0.6s;
+}
+
+.karthik:hover {
+  color: #fff;
+    background: #ff5722;
+}
+.profile{
+    color: #323232;
+  float: right;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  width:10%;
+  font-size: 18px;
+  background: white;
+  border: none;
+  color: #323232;
+  border-radius: 8px;
+  transition: all 0.6s;
+    
+}
