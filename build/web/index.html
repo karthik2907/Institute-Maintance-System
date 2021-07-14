@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" type="text/css" href="login_form_style.css">
+<link rel="stylesheet" href="button_style.css">
+<script src="index.js"></script>
+
+</head>
+<body>
+    
+<div class="title">
+  <img src="images/logo.jpg" alt="logo" id="logo">
+  <h2 id="h1" >PRASAD V POTLURI SIDDHARTHA INSTITUTE OF TECHNOLOGY</h2>
+  <br>
+</div>
+<div class="dropdown" >
+  <button  class="dropbtn tablink">Login</button>
+  <div class="dropdown-content">
+  <a href="admin_login.html">Admin</a>
+  <a href="student_login.html">Student</a>
+  </div>
+</div>
+<button class="tablink"  onclick="openPage('Home', this)" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Dept',this)">Departments</button>
+<button class="tablink" onclick="openPage('Acda', this)">Academics</button>
+<button class="tablink" onclick="openPage('About', this)">About</button>
+
+<!--<button class="tablink" onclick="openPage('T1', this)">T1</button>-->
+ 
+<div id="Home" class="tabcontent">
+ <marquee>Welcome to pvpsit</marquee>
+</div>
+
+
+<div id="About" class="tabcontent">
+about page
+</div>
+
+<div id="Dept" class="tabcontent">
+ department page
+</div>
+
+<div id="Acda" class="tabcontent">
+ Acedamics page
+</div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+function Logout(){
+  if (confirm("Willing to Logout??")) {
+    window.location = "index.html";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+        
+}
+</script>
+   
+</body>
+</html> 

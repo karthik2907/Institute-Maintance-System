@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Loginpage</title>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login_form_style.css">
+   
+</head>
+
+<body>
+ 
+    <div class="wrapper">
+        <h2>Login Form</h2>
+       
+        <form method="post" action="LoginServlet" id="myform">
+             <div class="input_field">
+                <select name="type" id="type">
+                <option value="professor">Professor</option>
+                <option value="student">Student</option>
+               
+                </select>
+            </div>
+            <div class="input_field">
+                <input type="text" placeholder="Name" name="name">
+            </div>
+            <div class="input_field">
+                <input type="password" placeholder="Password" name="pwd" visible required>
+            </div>
+            <div class="btn">
+                <input type="submit" value="Login" >
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
